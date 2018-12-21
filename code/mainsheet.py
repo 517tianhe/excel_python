@@ -8,4 +8,5 @@ class mainsheet:
         nrows = sheet.nrows
         ncols = sheet.ncols
         print('sheet的名字以及行数和列数:', sheet.name, ', ', nrows, ', ', ncols)
-
+        for row in range(0, nrows):
+            print(sheet.row_values(row))
